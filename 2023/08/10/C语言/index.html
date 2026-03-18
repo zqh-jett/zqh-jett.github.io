@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>C语言 | 辉的博客</title><meta name="author" content="辉"><meta name="copyright" content="辉"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="67777 成功">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言">
+<meta property="og:url" content="http://example.com/2023/08/10/C%E8%AF%AD%E8%A8%80/index.html">
+<meta property="og:site_name" content="辉的博客">
+<meta property="og:description" content="67777 成功">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3">
+<meta property="article:published_time" content="2023-08-10T02:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-03T08:18:16.573Z">
+<meta property="article:author" content="辉">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "C语言",
+  "url": "http://example.com/2023/08/10/C%E8%AF%AD%E8%A8%80/",
+  "image": "https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+  "datePublished": "2023-08-10T02:00:00.000Z",
+  "dateModified": "2026-03-03T08:18:16.573Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "辉",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/08/10/C%E8%AF%AD%E8%A8%80/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'C语言',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">辉的博客</span></a><a class="nav-page-title" href="/"><span class="site-name">C语言</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-image"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">C语言</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-10T02:00:00.000Z" title="发表于 2023-08-10 10:00:00">2023-08-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-03T08:18:16.573Z" title="更新于 2026-03-03 16:18:16">2026-03-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p><img src="/images/1.png" alt="1.png"><br><em>67777</em></p>
+<p><strong>成功</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">辉</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/08/10/C%E8%AF%AD%E8%A8%80/">http://example.com/2023/08/10/C%E8%AF%AD%E8%A8%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">辉的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post-share"><div class="social-share" data-image="https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/02/05/%E5%A4%8D%E8%AF%95%E5%9B%9E%E7%AD%94%E5%8A%A0%E5%8F%A3%E8%AF%95/" title="复试回答加口试"><img class="cover" src="/images/3_1772525788813.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">复试回答加口试</div></div><div class="info-2"><div class="info-item-1">英语口语  我是谁？加编号 我的家庭，不要流水账，要有父母的品质。 我的家乡，直接应对所有的生化话问题。 介绍自己的专业，对专业有清楚的认知。 优缺点， 未来的规划  Good morning&#x2F;afternoon, respected professors.It’s my great honor to introduce myself.My name is Zeng Qinghui.I’m a senior student from Jingdezhen University, majoring in Automation.I’m diligent, logical and eager to learn. I come from a warm family.My father is hardworking and responsible, teaching me to be persistent.My mother is kind and patient, influencing me to be sincere and helpful. I have a solid ...</div></div></div></a><a class="pagination-related" href="/2023/08/01/%E5%A4%8D%E8%AF%95/" title="复试"><img class="cover" src="/images/2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">复试</div></div><div class="info-2"><div class="info-item-1">一.单片机单片机的最小系统中央处理器、内部 RAM、程序存储器、还有各种外设、对应的控制寄存器时钟电路，复位电路等。 单片机由什么组成处理器，数据储存器，程序储存器，可编程 io 口，串行口啊，定时器，计数器中断。 51 单片机：有 8 位 cpu 核心，4kb 到 64kb 的内部储存器，支持多种串行通信接口，易开发，成本低，适合中小应用场景，如家电。 中断系统单片机在执行程序的过程中，有中断源申请中断时，单片机停止当前的程序去执行中断服务程序，执行完毕后自动返回原来的程序继续运行。 并行通信和串行通信 并行通信：控制简单传输速度快，长距离时成本高。 串行通信：传输线少，成本低占资源少，速度较慢。  32 单片机：数码管 静态：直接把断码断码送到数码管。 *动态： 通过控制位码实现数码管显示，再通过段码控制显示内容，然后循环依次点亮的形式点亮数码管，在延时一段时间，利用人眼视觉暂留效应，实现多位数字稳定同时显示*，能有效节省单片机 I&#x2F;O 资源。  **  二.传感器与检测技术传感器定义：能够感受到规定的被测量并且按照一定的规律转化成成可用的输出信号的装置元器件和装置...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">辉</div><div class="author-info-description">分享技术学习、编程经验和生活感悟的个人博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/03/18/32/" title="32"><img src="/images/12.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="32"/></a><div class="content"><a class="title" href="/2026/03/18/32/" title="32">32</a><time datetime="2026-03-18T09:10:51.000Z" title="发表于 2026-03-18 17:10:51">2026-03-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/02/05/%E5%A4%8D%E8%AF%95%E5%9B%9E%E7%AD%94%E5%8A%A0%E5%8F%A3%E8%AF%95/" title="复试回答加口试"><img src="/images/3_1772525788813.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="复试回答加口试"/></a><div class="content"><a class="title" href="/2026/02/05/%E5%A4%8D%E8%AF%95%E5%9B%9E%E7%AD%94%E5%8A%A0%E5%8F%A3%E8%AF%95/" title="复试回答加口试">复试回答加口试</a><time datetime="2026-02-05T08:34:49.000Z" title="发表于 2026-02-05 16:34:49">2026-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/10/C%E8%AF%AD%E8%A8%80/" title="C语言"><img src="https://ts3.tc.mm.bing.net/th/id/OIP-C.VCcgAcUd3Xv7HszQm8ZaJQHaEK?rs=1&amp;pid=ImgDetMain&amp;o=7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C语言"/></a><div class="content"><a class="title" href="/2023/08/10/C%E8%AF%AD%E8%A8%80/" title="C语言">C语言</a><time datetime="2023-08-10T02:00:00.000Z" title="发表于 2023-08-10 10:00:00">2023-08-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/01/%E7%AE%80%E5%8E%86%E5%9B%9E%E7%AD%94/" title="简历回答"><img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.6pksdUc73CLtAv6NEdY7AQHaEK?w=333&amp;h=187&amp;c=7&amp;r=0&amp;o=7&amp;dpr=1.5&amp;pid=1.7&amp;rm=3" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="简历回答"/></a><div class="content"><a class="title" href="/2023/08/01/%E7%AE%80%E5%8E%86%E5%9B%9E%E7%AD%94/" title="简历回答">简历回答</a><time datetime="2023-08-01T02:00:00.000Z" title="发表于 2023-08-01 10:00:00">2023-08-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/08/01/%E5%A4%8D%E8%AF%95/" title="复试"><img src="/images/2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="复试"/></a><div class="content"><a class="title" href="/2023/08/01/%E5%A4%8D%E8%AF%95/" title="复试">复试</a><time datetime="2023-08-01T02:00:00.000Z" title="发表于 2023-08-01 10:00:00">2023-08-01</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 辉</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
